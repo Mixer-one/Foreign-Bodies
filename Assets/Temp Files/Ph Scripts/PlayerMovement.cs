@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ground Check")] 
     public float playerHeight;
     public LayerMask whatIsGround;
-    private bool grounded;
+    [SerializeField]private bool grounded;
 
     private KeyCode jumpKey = KeyCode.Space;
     public Transform orientation;
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void movePlayer()
     {
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput; 
         if (grounded)
         {
             rb.AddForce(moveDirection * moveSpeed * 10f, ForceMode.Force);
