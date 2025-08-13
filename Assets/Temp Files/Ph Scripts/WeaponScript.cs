@@ -6,7 +6,6 @@ using UnityEngine;
 public class WeaponScript : MonoBehaviour
 {
     public float damage;
-
     private BoxCollider triggerBox;
     // Start is called before the first frame update
     void Start()
