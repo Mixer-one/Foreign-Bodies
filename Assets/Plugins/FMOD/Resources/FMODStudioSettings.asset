@@ -380,8 +380,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Fmod Project.fspro
-  sourceBankPath: Build
+  sourceProjectPath: ../../../Desktop/Fmod Project/Fmod Project.fspro
+  sourceBankPath: ../../../Desktop/Fmod Project/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

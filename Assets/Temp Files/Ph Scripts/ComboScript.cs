@@ -21,8 +21,11 @@ public class ComboScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
-        ExitAttack();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Attack();
+            Debug.Log("fwoooooss");
+        }
     }
 
     void Attack()
@@ -37,7 +40,7 @@ public class ComboScript : MonoBehaviour
                 weaponScript.damage = Combo[comboCounter].damage;
                 comboCounter++;
                 lastClickedTime = Time.time;
-                if (comboCounter > Combo.Count)
+                if (comboCounter >= Combo.Count)
                 {
                     comboCounter = 0;
                 }
