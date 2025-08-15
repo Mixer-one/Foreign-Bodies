@@ -47,6 +47,127 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5558361861852284021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/thing
+  m_EditorClassIdentifier: 
+  Path: event:/thing
+  Guid:
+    Data1: 452882090
+    Data2: 1122490040
+    Data3: -44139903
+    Data4: 1206707336
+  Banks:
+  - {fileID: -792659707579384157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4530940182705015386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps
+  Guid:
+    Data1: -1685368186
+    Data2: 1322641869
+    Data3: -1251304788
+    Data4: -2140055686
+  Banks:
+  - {fileID: -792659707579384157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 501
+--- !u!114 &-3843126524267997463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FBSFX/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638909002936347121
+  FileSizes:
+  - Name: Desktop
+    Value: 906
+  Exists: 1
+--- !u!114 &-1514739527775081268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CollectCoin
+  m_EditorClassIdentifier: 
+  Path: event:/CollectCoin
+  Guid:
+    Data1: 323227895
+    Data2: 1313069381
+    Data3: 372384143
+    Data4: -408930576
+  Banks:
+  - {fileID: -792659707579384157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-792659707579384157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FBSFX/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638909002936533552
+  FileSizes:
+  - Name: Desktop
+    Value: 24768
+  Exists: 1
 --- !u!114 &-310558429042058212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +188,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1074
   Exists: 1
+--- !u!114 &-127590350462264727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FBSFX/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638909002936327001
+  FileSizes:
+  - Name: Desktop
+    Value: 1074
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,20 +221,22 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7633608138889339517}
-  - {fileID: -310558429042058212}
-  - {fileID: -8580616093193368304}
+  - {fileID: -3843126524267997463}
+  - {fileID: -127590350462264727}
+  - {fileID: -792659707579384157}
   EditorEvents:
-  - {fileID: -6395799936545027673}
+  - {fileID: -1514739527775081268}
+  - {fileID: -4530940182705015386}
+  - {fileID: -5558361861852284021}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -310558429042058212}
+  - {fileID: -127590350462264727}
   StringsBanks:
-  - {fileID: 7633608138889339517}
+  - {fileID: -3843126524267997463}
   cacheVersion: 131849
-  cacheTime: 638908700793495628
+  cacheTime: 638909002936533552
   SerializableEventsDict:
-  - key: event:/collectCoin
+  - key: event:/cOLLECTcOIN
     index: 0
 --- !u!114 &7633608138889339517
 MonoBehaviour:

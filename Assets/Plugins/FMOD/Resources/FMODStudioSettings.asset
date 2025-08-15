@@ -380,8 +380,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FBFMOD/FBFMOD.fspro
-  sourceBankPath: FBFMOD/Build
+  sourceProjectPath: FBSFX/FBSFX.fspro
+  sourceBankPath: FBSFX/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -420,7 +420,7 @@ MonoBehaviour:
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131849
   HideSetupWizard: 1
-  LastEventReferenceScanVersion: 131632
+  LastEventReferenceScanVersion: 131849
   Platforms:
   - {fileID: 8880720284886083604}
   - {fileID: 3431105430335552633}

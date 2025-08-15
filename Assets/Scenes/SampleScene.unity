@@ -323,7 +323,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 762404643}
   m_Father: {fileID: 1800307646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &615903450
@@ -432,6 +433,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &762404642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762404643}
+  - component: {fileID: 762404644}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762404643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762404642}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 615903449}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &762404644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762404642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c9b13622abc8c64f843c1b04e95559e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Footsteps>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <coinCollected>k__BackingField:
+    Guid:
+      Data1: 323227895
+      Data2: 1313069381
+      Data3: 372384143
+      Data4: -408930576
+    Path: event:/collectCoin
 --- !u!1 &817942033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,13 +1500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec1a29a80cdf624fbcb48abde62ea8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectCoin:
-    Guid:
-      Data1: -2094332830
-      Data2: 1323937855
-      Data3: 1396731806
-      Data4: -1986080027
-    Path: event:/collectCoin
 --- !u!4 &1607238001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3045842198115644631, guid: 6c7dbc57e2f441643b6250ace67035d2, type: 3}

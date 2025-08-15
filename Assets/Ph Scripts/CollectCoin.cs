@@ -2,10 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FMODUnity;
+
 public class CollectCoin : MonoBehaviour
 {
-    [SerializeField] private EventReference collectCoin; 
     void Start()
     {
         
@@ -15,8 +14,7 @@ public class CollectCoin : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            AudioManager.instance.PlayOneShot(collectCoin, this.transform.position);
-            Debug.Log("ferfwaef");
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.coinCollected, this.transform.position);
             //Destroy(this.gameObject);
         }
     }
@@ -25,8 +23,7 @@ public class CollectCoin : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            AudioManager.instance.PlayOneShot(collectCoin, this.transform.position);
-            Debug.Log("ferfwaef");
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.coinCollected, this.transform.position);
         }
     }
 }
