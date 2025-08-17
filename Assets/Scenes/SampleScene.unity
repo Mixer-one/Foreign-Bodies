@@ -479,18 +479,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Footsteps>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1685368186
+      Data2: 1322641869
+      Data3: -1251304788
+      Data4: -2140055686
+    Path: event:/Footsteps
   <coinCollected>k__BackingField:
     Guid:
       Data1: 323227895
       Data2: 1313069381
       Data3: 372384143
       Data4: -408930576
-    Path: event:/collectCoin
+    Path: event:/CollectCoin
 --- !u!1 &817942033
 GameObject:
   m_ObjectHideFlags: 0
