@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using FMODUnity;
+
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -17,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     [SerializeField]private bool grounded;
+
+
 
     private KeyCode jumpKey = KeyCode.Space;
     public Transform orientation;
@@ -97,4 +101,6 @@ public class PlayerMovement : MonoBehaviour
     {
         movePlayer();
     }
+
+
 }

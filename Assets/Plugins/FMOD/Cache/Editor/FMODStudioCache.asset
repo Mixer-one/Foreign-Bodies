@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638909002936327001
+  lastModified: 638910717122468922
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -67,33 +67,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6206903545069029468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/thing
-  m_EditorClassIdentifier: 
-  Path: event:/thing
-  Guid:
-    Data1: 452882090
-    Data2: 1122490040
-    Data3: -44139903
-    Data4: 1206707336
-  Banks:
-  - {fileID: -2127649435444258898}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2127649435444258898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,10 +82,10 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638909002936533552
+  lastModified: 638910717122775632
   FileSizes:
   - Name: Desktop
-    Value: 24768
+    Value: 23744
   Exists: 1
 --- !u!114 &-1514739527775081268
 MonoBehaviour:
@@ -207,17 +180,20 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -1514739527775081268}
   - {fileID: -688776641527824370}
-  - {fileID: -6206903545069029468}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8840920282279394554}
   StringsBanks:
   - {fileID: 1818900875421605138}
   cacheVersion: 131849
-  cacheTime: 638909002936533552
+  cacheTime: 638910717122775632
   SerializableEventsDict:
-  - key: event:/collectCoin
+  - key: event:/CollectCoin
     index: 0
+  - key: event:/Footsteps
+    index: 1
+  - key: event:/something
+    index: 2
 --- !u!114 &1818900875421605138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,10 +209,10 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638909002936347121
+  lastModified: 638910717122473953
   FileSizes:
   - Name: Desktop
-    Value: 906
+    Value: 870
   Exists: 1
 --- !u!114 &7633608138889339517
 MonoBehaviour:
