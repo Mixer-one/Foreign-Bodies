@@ -22,13 +22,14 @@ public class AnimationTest : MonoBehaviour
         footSteps = AudioManager.instance.CreateInstance(FMODEvents.instance.Footsteps);
     }
 
-    // Update is called once per frame
+    
     void Update()
     
     {
-        footSteps.start();
+    
         if (player.transform.position != latepos)
         {
+            UpdateSound();
             animator.SetBool("Running", true);
             
         }
@@ -43,17 +44,18 @@ public class AnimationTest : MonoBehaviour
     {
         latepos = player.transform.position;
     }
-    /*private void UpdateSound()
+    private void UpdateSound()
     {
         PLAYBACK_STATE playbackState;
         footSteps.getPlaybackState(out playbackState);
         if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
         {
             footSteps.start();
+            
         }
         else
         {
             footSteps.stop(STOP_MODE.ALLOWFADEOUT);
         }
-    }*/
+    }
 }

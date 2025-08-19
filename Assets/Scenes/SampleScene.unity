@@ -479,10 +479,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Footsteps>k__BackingField:
     Guid:
-      Data1: -1685368186
-      Data2: 1322641869
-      Data3: -1251304788
-      Data4: -2140055686
+      Data1: -1416956910
+      Data2: 1237644422
+      Data3: 1312411293
+      Data4: 566712772
     Path: event:/Footsteps
   <coinCollected>k__BackingField:
     Guid:
@@ -490,7 +490,14 @@ MonoBehaviour:
       Data2: 1313069381
       Data3: 372384143
       Data4: -408930576
-    Path: event:/CollectCoin
+    Path: event:/CoinSFX/CollectCoin
+  <wind>k__BackingField:
+    Guid:
+      Data1: -704045340
+      Data2: 1283038040
+      Data3: -10109270
+      Data4: -603878292
+    Path: event:/Ambiance/AmbianceOutdoor
 --- !u!1 &817942033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,6 +1389,7 @@ GameObject:
   - component: {fileID: 1585067501}
   - component: {fileID: 1585067500}
   - component: {fileID: 1585067505}
+  - component: {fileID: 1585067506}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1500,6 +1508,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec1a29a80cdf624fbcb48abde62ea8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1585067506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585067499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2071563650
+      Data2: 1333243772
+      Data3: 224925575
+      Data4: 1662683460
+    Path: event:/CoinSFX/NearCoin
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 3
 --- !u!4 &1607238001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3045842198115644631, guid: 6c7dbc57e2f441643b6250ace67035d2, type: 3}
@@ -1747,7 +1786,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800307646}
-  - component: {fileID: 1800307647}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1771,18 +1809,6 @@ Transform:
   - {fileID: 615903449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1800307647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800307645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1ba4651fe3595246aa6cdecb0ab88f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1806308838
 GameObject:
   m_ObjectHideFlags: 0

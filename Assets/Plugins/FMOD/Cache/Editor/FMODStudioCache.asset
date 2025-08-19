@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638910717122468922
+  lastModified: 638911682559162582
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -67,6 +67,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2285869429602693194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/AmbianceOutdoor
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/AmbianceOutdoor
+  Guid:
+    Data1: -704045340
+    Data2: 1283038040
+    Data3: -10109270
+    Data4: -603878292
+  Banks:
+  - {fileID: 82241494980669322}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
+--- !u!114 &-2153731003434209515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CoinSFX/NearCoin
+  m_EditorClassIdentifier: 
+  Path: event:/CoinSFX/NearCoin
+  Guid:
+    Data1: 2071563650
+    Data2: 1333243772
+    Data3: 224925575
+    Data4: 1662683460
+  Banks:
+  - {fileID: -2127649435444258898}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1536
 --- !u!114 &-2127649435444258898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,38 +136,11 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638910717122775632
+  lastModified: 638911682559471915
   FileSizes:
   - Name: Desktop
-    Value: 23744
+    Value: 39072
   Exists: 1
---- !u!114 &-1514739527775081268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/CollectCoin
-  m_EditorClassIdentifier: 
-  Path: event:/CollectCoin
-  Guid:
-    Data1: 323227895
-    Data2: 1313069381
-    Data3: 372384143
-    Data4: -408930576
-  Banks:
-  - {fileID: -2127649435444258898}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-688776641527824370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,14 +155,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Footsteps
   Guid:
-    Data1: -1685368186
-    Data2: 1322641869
-    Data3: -1251304788
-    Data4: -2140055686
+    Data1: -1416956910
+    Data2: 1237644422
+    Data3: 1312411293
+    Data4: 566712772
   Banks:
   - {fileID: -2127649435444258898}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -177,23 +204,48 @@ MonoBehaviour:
   - {fileID: 1818900875421605138}
   - {fileID: -8840920282279394554}
   - {fileID: -2127649435444258898}
+  - {fileID: 82241494980669322}
   EditorEvents:
-  - {fileID: -1514739527775081268}
   - {fileID: -688776641527824370}
+  - {fileID: -2153731003434209515}
+  - {fileID: 7124901734178561827}
+  - {fileID: -2285869429602693194}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8840920282279394554}
   StringsBanks:
   - {fileID: 1818900875421605138}
   cacheVersion: 131849
-  cacheTime: 638910717122775632
+  cacheTime: 638911682559620741
   SerializableEventsDict:
-  - key: event:/CollectCoin
-    index: 0
   - key: event:/Footsteps
+    index: 0
+  - key: event:/CoinSFX/NearCoin
     index: 1
-  - key: event:/something
+  - key: event:/CoinSFX/CollectCoin
     index: 2
+  - key: event:/Ambiance/AmbianceOutdoor
+    index: 3
+--- !u!114 &82241494980669322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/LevelFX.bank
+  m_EditorClassIdentifier: 
+  Path: FBSFX/Build/Desktop/LevelFX.bank
+  Name: LevelFX
+  StudioPath: bank:/LevelFX
+  lastModified: 638911682559620741
+  FileSizes:
+  - Name: Desktop
+    Value: 148864
+  Exists: 1
 --- !u!114 &1818900875421605138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,11 +261,38 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638910717122473953
+  lastModified: 638911682559172634
   FileSizes:
   - Name: Desktop
-    Value: 870
+    Value: 1022
   Exists: 1
+--- !u!114 &7124901734178561827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CoinSFX/CollectCoin
+  m_EditorClassIdentifier: 
+  Path: event:/CoinSFX/CollectCoin
+  Guid:
+    Data1: 323227895
+    Data2: 1313069381
+    Data3: 372384143
+    Data4: -408930576
+  Banks:
+  - {fileID: -2127649435444258898}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7633608138889339517
 MonoBehaviour:
   m_ObjectHideFlags: 0
