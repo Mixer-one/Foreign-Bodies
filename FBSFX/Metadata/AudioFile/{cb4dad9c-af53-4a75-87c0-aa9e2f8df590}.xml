@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{cb4dad9c-af53-4a75-87c0-aa9e2f8df590}">
+		<property name="assetPath">
+			<value>Music/250546__jhumbucker__suspense-motif-2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>15.145635416666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{521acfa8-db32-4601-8d1e-0ca940a7cd6c}</destination>
+		</relationship>
+	</object>
+</objects>

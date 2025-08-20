@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private float verticalInput;
     private Vector3 moveDirection;
     private Rigidbody rb;
+
+    public int coins;
     
     void Start()
     {
@@ -102,5 +104,11 @@ public class PlayerMovement : MonoBehaviour
         movePlayer();
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag.Equals("coin"))
+        {
+           // coins++;
+        }
+    }
 }

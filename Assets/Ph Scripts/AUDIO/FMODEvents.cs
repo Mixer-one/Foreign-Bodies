@@ -6,10 +6,13 @@ public class FMODEvents : MonoBehaviour
 {
     [field: Header("Player SFX")]
     [field: SerializeField] public EventReference Footsteps { get; private set; }
+    [field: SerializeField] public EventReference unlockDoor { get; private set; }
     [field: Header("Coin SFX")]
     [field: SerializeField] public EventReference coinCollected { get; private set; }
     [field: Header("Ambiance")]
     [field: SerializeField] public EventReference wind { get; private set; }
+    [field: Header("Music")]
+    [field: SerializeField] public EventReference music { get; private set; }
     public static FMODEvents instance { get; private set;}
 
     private void Awake()
