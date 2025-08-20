@@ -32,6 +32,7 @@ public class AudioManager : MonoBehaviour
     public void SetAmbienceParamater(string paramName, float paramValue)
     {
         ambienceEventInstance.setParameterByName(paramName, paramValue);
+        Debug.Log(paramName + paramValue);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 WorldPos)
@@ -50,9 +51,15 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateInstance(ambianceEventReference);
         ambienceEventInstance.start();
     }
+    
     private void InitializeMusic(EventReference musicEventReference)
     {
         musicEventInstance = CreateInstance(musicEventReference);
         musicEventInstance.start();
+    }
+
+    public void SetMusicArea(MusicArea area)
+    {
+        musicEventInstance.setParameterByName("area", (float)area);
     }
 }

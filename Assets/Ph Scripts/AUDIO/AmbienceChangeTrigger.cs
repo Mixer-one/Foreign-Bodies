@@ -15,6 +15,7 @@ public class AmbienceChangeTrigger : MonoBehaviour
         if (other.tag.Equals("Player"))
         {
             AudioManager.instance.SetAmbienceParamater(parameterName, parameterValue);
+            Debug.Log("oooooooooooooooooooo");
         }
     }
 }
