@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638912967051986898
+  lastModified: 638913019344807758
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -165,7 +165,7 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638913003032681446
+  lastModified: 638913019346764382
   FileSizes:
   - Name: Desktop
     Value: 86016
@@ -300,7 +300,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 1818900875421605138}
   cacheVersion: 131849
-  cacheTime: 638913003032681446
+  cacheTime: 638913019346764382
   SerializableEventsDict:
   - key: event:/Footsteps
     index: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/LevelFX.bank
   Name: LevelFX
   StudioPath: bank:/LevelFX
-  lastModified: 638913000243312155
+  lastModified: 638913019344772638
   FileSizes:
   - Name: Desktop
     Value: 1657696
@@ -349,7 +349,7 @@ MonoBehaviour:
   Path: FBSFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638912967051996922
+  lastModified: 638913019344817777
   FileSizes:
   - Name: Desktop
     Value: 1202

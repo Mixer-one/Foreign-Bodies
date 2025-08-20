@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         InitializeAmbiance(FMODEvents.instance.wind);
-        InitializeAmbiance(FMODEvents.instance.music);
+        InitializeMusic(FMODEvents.instance.music);
     }
 
     public void SetAmbienceParamater(string paramName, float paramValue)
