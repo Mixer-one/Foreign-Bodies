@@ -27,6 +27,11 @@ public class AudioManager : MonoBehaviour
         InitializeAmbiance(FMODEvents.instance.wind);
     }
 
+    public void SetAmbienceParamater(string paramName, float paramValue)
+    {
+        ambienceEventInstance.setParameterByName(paramName, paramValue);
+    }
+
     public void PlayOneShot(EventReference sound, Vector3 WorldPos)
     {
         RuntimeManager.PlayOneShot(sound, WorldPos);

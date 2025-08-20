@@ -19,7 +19,7 @@ public class AnimationTest : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        footSteps = AudioManager.instance.CreateInstance(FMODEvents.instance.Footsteps);
+        //footSteps = AudioManager.instance.CreateInstance(FMODEvents.instance.Footsteps);
     }
 
     
